@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
-export class NewsItem extends Component {
+import React from 'react'
 
-    render() {
+const NewsItem = (props)=>{
 
-        let { title, description, imageUrl, newsUrl, author, date, source  } = this.props;
+        let { title, description, imageUrl, newsUrl, author, date, source  } = props;
         return (
-
+ 
             <div className="my-3" >
                 <div className="card">
                 <div style={{display:'felx', justifyContent:'flexEnd', position:'absolute', right:'0'}}>
@@ -23,7 +22,7 @@ export class NewsItem extends Component {
                 </div>
             </div>
         )
-    }
+    
 }
 
 export default NewsItem
